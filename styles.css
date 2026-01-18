@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* font/titulo */
+
+h1 {
+    color: rgb(239, 231, 231);
+    text-align: center;
+    margin: 25px auto;
+    font-style: italic;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 380;
+  font-style: normal;
+}
+
+/* input */
+
+.input-task {
+    border: none;
+    border-radius: 15px;
+    width: 400px;
+    height: 40px;
+    padding-left: 24px;
+    font-size: 19px;
+    opacity: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.input-task:hover{
+     opacity: 80%;
+}
+
+.input-task:active{
+    background-color: aliceblue;
+}
+
+.input-task::placeholder{
+    color: #000000;
+}
+
+/* button */
+
+.button-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #2B2318;
+    color: rgb(252, 252, 252);
+    font-size: 17px;
+    padding: 0 10px;
+    opacity: 100%;
+    float: right;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-task:hover{
+    background-color: #56704B; 
+}
+.button-task:active{
+    background-color: #343b31;
+}
+
+/* corpo */
+
+body {
+    background: url(./img/background.png)
+}
+
+img {
+    height: 25px;
+}
+
+.container {
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    margin: 150px auto ;
+    opacity: 100%;
+    padding-top: 10px;
+    padding: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* lista */
+
+.lista-task{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    background-color: #343b31;
+    padding: 10px;
+    margin: 10px auto;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+        
+}
+
+.done {
+    background-color: #56704B;
+    text-decoration: line-through;
+}
